@@ -118,8 +118,9 @@ export default function Write() {
         <img className="writeImg" src={URL.createObjectURL(file)} alt="" />
       )}
       <form className="writeForm" onSubmit={handleSubmit}>
+        
         <div className="writeFormGroup">
-          <label htmlFor="fileInput">
+        <label htmlFor="fileInput">
             <i className="writeIcon fas fa-plus"></i>
           </label>
           <input
@@ -128,6 +129,8 @@ export default function Write() {
             style={{ display: "none" }}
             onChange={(e) => setFile(e.target.files[0])}
           />
+        </div>
+        <div className="writeFormGroup">
           <input
             type="text"
             placeholder="Title"
@@ -144,9 +147,14 @@ export default function Write() {
             onChange={e => setBody(e.target.value)}
           ></textarea>
         </div>
-        <button className="writeSubmit" type="button" onClick={handleSubmit}>
-          Publish
-        </button>
+          <div className="writeFormGroup">
+
+            <button className="writeSubmit" type="button" onClick={handleSubmit}>
+            Publish
+            </button>
+
+          </div>
+        
       </form>
       <ToastContainer
         position="top-center"

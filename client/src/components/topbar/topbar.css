@@ -90,3 +90,9 @@ body{
     box-sizing: border-box;
   }
 }
+
+@media (max-width: 320px){
+  .home, .header, .top{
+    display: none !important;
+  }
+}

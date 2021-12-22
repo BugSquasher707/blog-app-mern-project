@@ -40,16 +40,23 @@ export default function Home() {
   
   return (
     <>
+
+    <div className="resolutionDiv">
+
+        <h1>Please Open this Website on Bigger Screen for Good Experience...!</h1>
+
+    </div>
+    
       <Header />
       <div className="home">
         
               
         {loader &&  
         <div className='errorDiv1'>
-            <div>
+            <div className="loaderDiv">
               <Loader
                 type="Circles"
-                color="#555"
+                color="#ffffff"
                 height={80}
                 width={80}
                 timeout={3000} //3 secs
