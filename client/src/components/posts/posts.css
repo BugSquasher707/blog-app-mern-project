@@ -7,7 +7,8 @@
 
 @media (max-width: 768px){
     .posts{
-        flex: none;
+        flex: auto !important;
         width: 100% !important;
+        margin: 10px !important;
     }
 }
