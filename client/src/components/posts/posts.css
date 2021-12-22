@@ -10,6 +10,6 @@
     .posts{
         flex: auto !important;
         width: 100% !important;
-        margin: 10px !important;
+        margin: 5px !important;
     }
 }
