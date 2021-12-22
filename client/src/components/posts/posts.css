@@ -4,3 +4,10 @@
     flex-wrap: wrap;
     margin: 20px;
 }
+
+@media (max-width: 768px){
+    .posts{
+        flex: none;
+        width: 100% !important;
+    }
+}
