@@ -64,14 +64,18 @@ export default function Home() {
             </div>
           </div>
         }
+        <div className="postSideDiv">
 
-            {posts ? 
+            {
+              posts ? 
               <> 
-                {<Posts posts={posts} />}
+                <Posts posts={posts} />
               </>
               :
               <div className='errorDiv'></div>
             }
+
+        </div>
 
         <Sidebar />
         <ToastContainer
