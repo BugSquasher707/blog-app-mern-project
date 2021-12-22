@@ -1,0 +1,26 @@
+{
+  "name": "the-blog-app",
+  "version": "1.0.0",
+  "description": "MERN Stack Blog App by Arslan Arjumand",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
+    "client": "cd ./client && yarn start",
+    "dev": "concurrently \"nodemon server.js\" \"yarn run client\""
+  },
+  "author": "Arslan Arjumand",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "cartoon-avatar": "^1.0.2",
+    "concurrently": "^6.4.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.13",
+    "nodemailer": "^6.7.2",
+    "nodemon": "^2.0.15"
+  }
+}

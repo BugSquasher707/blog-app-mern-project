@@ -1,0 +1,39 @@
+.home{
+    display: flex;
+    position: relative;
+}
+
+.errorDiv{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.errorDiv h1{
+    border: 3px solid #555;
+    padding: 1.2rem 2rem;
+    color: #555;
+    text-align: center;
+    margin-top: 4%;
+    font-size: 18px;
+    font-family: "Lora", serif;
+    font-weight: 500;
+    margin-left: 5%;
+}
+
+.errorDiv1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0%;
+    left: -10%;
+}
+
+.overFlowHidden{
+    overflow: hidden;
+}
